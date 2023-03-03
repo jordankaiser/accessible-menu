@@ -1,4 +1,49 @@
-body {
-  opacity: 0.9;
-  background-color: pink;
+nav {
+  ul.menu {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      list-style-type: none;
+      background-color: lightblue;
+
+      &.has-submenu.open {
+        ul {
+          display: block;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 18px;
+        width: 150px;
+        display: none;
+      }
+    }
+  }
+
+  li {
+    position: relative;
+  }
+}
+
+// Accessibly hide so screen readers can still read.
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
