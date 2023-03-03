@@ -3,7 +3,7 @@ const menuItems = document.querySelectorAll('li.has-submenu');
 Array.prototype.forEach.call(menuItems, function(element) {
 
   // Handle Button click event.
-  element.querySelector('button').addEventListener('click',  (event) => {
+  element.querySelector('button').addEventListener('click', (event) => {
     if (element.className == 'has-submenu') {
       element.classList.add('open');
       element.querySelector('a').setAttribute('aria-expanded', 'true');
