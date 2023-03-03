@@ -578,7 +578,7 @@ Array.prototype.forEach.call(menuItems, function(element) {
     });
     // Handle mouse enter event.
     element.addEventListener("mouseenter", (event)=>{
-        if (!element.classList.contains("open")) element.classList.add("open");
+        if (element.classList.contains("open") === false) element.classList.add("open");
     });
 });
 
