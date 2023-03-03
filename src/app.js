@@ -5,11 +5,11 @@ Array.prototype.forEach.call(menuItems, function(element) {
   // Handle Button click event.
   element.querySelector('button').addEventListener('click',  (event) => {
     if (element.className == 'has-submenu') {
-      element.className = 'has-submenu open';
+      element.classList.add('open');
       element.querySelector('a').setAttribute('aria-expanded', 'true');
       element.querySelector('button').setAttribute('aria-expanded', 'true');
     } else {
-      element.className = 'has-submenu';
+      element.classList.remove('open');
       element.querySelector('a').setAttribute('aria-expanded', 'false');
       element.querySelector('button').setAttribute('aria-expanded', 'false');
     }
