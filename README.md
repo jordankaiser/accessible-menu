@@ -2,7 +2,7 @@
 
 ## About
 
-Basic accessible menu interaction. Allows the tier one menu items to link to pages while keeping the drop down usable for tab navigation.
+Basic accessible menu interaction. Allows the tier one menu items to link to pages while keeping the drop down usable for tab navigation. Uses [Parcel](https://parceljs.org/).
 
 Based off Approach 2 from https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed.
 
